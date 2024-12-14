@@ -2,7 +2,7 @@ import React from 'react'
 
 const Tutor = () => {
   return (
-    <div>Tutor</div>
+    <div className='px-5 py-3'>Tutor</div>
   )
 }
 

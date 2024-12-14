@@ -2,7 +2,7 @@ import React from 'react'
 
 const Withdrawal = () => {
   return (
-    <div>Withdrawal</div>
+    <div className='px-5 py-3'>Withdrawal</div>
   )
 }
 
