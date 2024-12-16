@@ -35,6 +35,17 @@ const Dashboard = () => {
     {icon:Icon_Two, headData:'Rs.12800.00', type:'Total Revenue', precentage:'12%', days:'30', position:'down'},
     {icon:Icon_Three, headData:'Rs.6500.00', type:'Total Withrawal', precentage:'4%', days:'30', position:'up'}
   ]
+
+  const tableArray = [
+    {studentid:'LA-0234',kuppi:'Introduction to CS',date:'30 Apr, 2017 to 24 Otc 2020',price:'1000.00'},
+    {studentid:'LA-0234',kuppi:'Introduction to CS',date:'30 Apr, 2017 to 24 Otc 2020',price:'1000.00'},
+    {studentid:'LA-0234',kuppi:'Introduction to CS',date:'30 Apr, 2017 to 24 Otc 2020',price:'1000.00'},
+    {studentid:'LA-0234',kuppi:'Introduction to CS',date:'30 Apr, 2017 to 24 Otc 2020',price:'1000.00'},
+    {studentid:'LA-0234',kuppi:'Introduction to CS',date:'30 Apr, 2017 to 24 Otc 2020',price:'1000.00'},
+    {studentid:'LA-0234',kuppi:'Introduction to CS',date:'30 Apr, 2017 to 24 Otc 2020',price:'1000.00'},
+    {studentid:'LA-0234',kuppi:'Introduction to CS',date:'30 Apr, 2017 to 24 Otc 2020',price:'1000.00'},
+    {studentid:'LA-0234',kuppi:'Introduction to CS',date:'30 Apr, 2017 to 24 Otc 2020',price:'1000.00'}
+  ]
   return (
     <div className='flex flex-col p-5 gap-9'>
       <div className='w-full h-auto flex flex-row justify-around'>
@@ -65,7 +76,7 @@ const Dashboard = () => {
             />
         </div>
         <div className='w-full h-auto flex flex-col'>
-          <DashboardTable/>
+          <DashboardTable  data={tableArray}/>
         </div>
       </div>
     </div>
