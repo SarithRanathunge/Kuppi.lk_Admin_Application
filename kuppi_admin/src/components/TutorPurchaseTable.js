@@ -1,14 +1,14 @@
 import React from 'react'
 import { FaEdit, FaTrash } from 'react-icons/fa'
 
-const StudentPurchaseTable = ({data}) => {
+const TutorPurchaseTable = ({data}) => {
   return (
     <div className="w-full border-collapse border border-gray-200 bg-white rounded-md shadow-md">
           <div className="bg-blue-100">
             <div className='w-full h-auto flex flex-row py-2'>
               <span className="w-full text-center text-[14pt] font-normal text-gray-500">Kuppi Name</span>
-              <span className="w-full text-center text-[14pt] font-normal text-gray-500">Tutor Name</span>
-              <span className="w-full text-center text-[14pt] font-normal text-gray-500">Date</span>
+              <span className="w-full text-center text-[14pt] font-normal text-gray-500">Course Name</span>
+              <span className="w-full text-center text-[14pt] font-normal text-gray-500">Acedemic Year</span>
               <span className="w-full text-center text-[14pt] font-normal text-gray-500">Price(LKR)</span>
               <span className="w-full text-center text-[14pt] font-normal text-gray-500">Action</span>
             </div>
@@ -20,8 +20,8 @@ const StudentPurchaseTable = ({data}) => {
                     <img src={data.image} alt="module image" className='w-[100px] h-[50px] object-contain rounded-lg mr-2'/>
                     {data.kuppi}
                 </span>
-                <span className="w-full h-auto text-center text-[12pt] font-normal text-black">{data.tutor}</span>
-                <span className="w-full h-auto text-center text-[12pt] font-normal text-black">{data.date}</span>
+                <span className="w-full h-auto text-center text-[12pt] font-normal text-black">{data.course}</span>
+                <span className="w-full h-auto text-center text-[12pt] font-normal text-black">{data.year}</span>
                 <span className="w-full h-auto text-center text-[12pt] font-normal text-black">{data.price}</span>
                 <span className="w-full h-auto text-center text-[12pt] font-normal text-black">
                   <button className="mr-2 text-blue-500 hover:text-blue-700">
@@ -38,4 +38,4 @@ const StudentPurchaseTable = ({data}) => {
   )
 }
 
-export default StudentPurchaseTable
+export default TutorPurchaseTable

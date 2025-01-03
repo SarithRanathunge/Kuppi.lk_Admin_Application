@@ -58,9 +58,9 @@ const Dashboard = () => {
       
       <div className='w-full h-auto flex flex-col gap-3'>
         <div className='w-full h-auto flex flex-row justify-center items-center'>
-          <button onClick={onClickPurchase} className={`w-full h-auto text-[16pt] outline-none font-medium border-b-[5px] text-start ${purchase?`border-b-blue-500 text-blue-500`:`border-b-white text-black`}`}>Total Purchase</button>
-          <button onClick={onClickRevenue} className={`w-full h-auto text-[16pt] outline-none font-medium border-b-[5px] text-start ${revenue?`border-b-blue-500 text-blue-500`:`border-b-white text-black`}`}>Total Revenue</button>
-          <button onClick={onClickWithdrawal} className={`w-full h-auto text-[16pt] outline-none font-medium border-b-[5px] text-start ${withdrawal?`border-b-blue-500 text-blue-500`:`border-b-white text-black`}`}>Total Withdrawal</button>
+          <button onClick={onClickPurchase} className={`w-full h-auto text-[16pt] outline-none text-blue-500 font-medium border-b-[5px] text-start ${purchase?`border-b-blue-500 text-blue-500`:`border-b-white text-black`}`}>Total Purchase</button>
+          <button onClick={onClickRevenue} className={`w-full h-auto text-[16pt] outline-none text-blue-500 font-medium border-b-[5px] text-start ${revenue?`border-b-blue-500 text-blue-500`:`border-b-white text-black`}`}>Total Revenue</button>
+          <button onClick={onClickWithdrawal} className={`w-full h-auto text-[16pt] outline-none text-blue-500 font-medium border-b-[5px] text-start ${withdrawal?`border-b-blue-500 text-blue-500`:`border-b-white text-black`}`}>Total Withdrawal</button>
         </div>
         <div className='w-[700px] h-auto flex flex-row items-center rounded-lg bg-white gap-2 p-2 py-3'>
             <IoIosSearch className='text-[14pt]'/>

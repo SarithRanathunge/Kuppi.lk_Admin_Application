@@ -12,6 +12,10 @@ import Reports from "./pages/Reports";
 import Settings from "./pages/Settings";
 import StudentDetails from './pages/StudentDetails';
 import StudentPurchase from './pages/StudentPurchase';
+import TutorDetails from './pages/TutorDetails';
+import TutorPurchase from './pages/TutorPurchase';
+import KuppiModules from './pages/KuppiModules';
+import KuppiModuleDetail from './pages/KuppiModuleDetail';
 
 function App() {
   return (
@@ -26,7 +30,11 @@ function App() {
             <Route path='/student-details' element={<StudentDetails />} />
             <Route path='/student-purchases' element={<StudentPurchase />} />
             <Route path='/tutor' element={<Tutor />} />
-            <Route path='/kuppi_upload' element={<KuppiUpload />} />
+            <Route path='/tutor-details' element={<TutorDetails />} />
+            <Route path='/tutor-purchases' element={<TutorPurchase />} />
+            <Route path='/kuppi-upload' element={<KuppiUpload />} />
+            <Route path='/kuppi-modules' element={<KuppiModules />} />
+            <Route path='/kuppi-module-details' element={<KuppiModuleDetail />} />
             <Route path='/withdrawal' element={<Withdrawal />} />
             <Route path='/message' element={<Message />} />
             <Route path='/reports' element={<Reports />} />

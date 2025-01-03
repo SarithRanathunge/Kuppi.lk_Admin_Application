@@ -92,7 +92,7 @@ const SideBar = () => {
                     setMessage(true)
                     setReport(true)
                     setSettings(true)
-                    navigate('/kuppi_upload')
+                    navigate('/kuppi-upload')
                 }}
                 className={`w-full h-auto flex flex-row justify-center py-3 items-center font-medium cursor-pointer rounded-lg ${!kuppi ? 'text-blue-600 bg-blue-200':'text-gray-500 bg-white'}`}
             >

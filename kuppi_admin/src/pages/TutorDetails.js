@@ -3,7 +3,7 @@ import ProfileImage from '../assests/admin.jpg'
 import { useNavigate } from 'react-router-dom'
 import { RiDeleteBin2Fill } from "react-icons/ri"
 
-const StudentDetails = () => {
+const TutorDetails = () => {
   const navigate = useNavigate();
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
@@ -26,7 +26,7 @@ const StudentDetails = () => {
     }
 
     setError('');
-    navigate('/student');
+    navigate('/tutor');
   };
   return (
     <div className='w-full h-auto p-4'>
@@ -40,8 +40,8 @@ const StudentDetails = () => {
                     </div>
                 </div>
                 
-                <button className='text-[12pt] text-white bg-blue-500 rounded-lg px-4 py-3 hover:bg-blue-600' onClick={()=>{ navigate('/student-purchases')}}>
-                    See All Purchases
+                <button className='text-[12pt] text-white bg-blue-500 rounded-lg px-4 py-3 hover:bg-blue-600' onClick={()=>{ navigate('/tutor-purchases')}}>
+                    Your Kuppi
                 </button>
             </div>
 
@@ -182,4 +182,4 @@ const StudentDetails = () => {
   )
 }
 
-export default StudentDetails
+export default TutorDetails
