@@ -16,7 +16,23 @@ export const AuthProvider = ({children}) => {
   const [kuppi, setKuppi] = useState('')
   const [tutor, setTutor] = useState('')
 
-  const [module, setModule] = useState('') 
+  const [module, setModule] = useState('')
+
+  const [universityTableSelect, setUniversityTableSelect] = useState(false)
+  const [degreeProgramTableSelect, setDegreeProgramTableSelect] = useState(false)
+  const [subjectTableSelect, setSubjectTableSelect] = useState(false)
+
+  const onClickUniversityTableSelect = () => {
+    setUniversityTableSelect((prev)=> !prev)
+  }
+
+  const onClickdegreeProgramTableSelect = () => {
+    setDegreeProgramTableSelect((prev)=> !prev)
+  }
+
+  const onClickSubjectTableSelect = () =>{
+    setSubjectTableSelect((prev)=> !prev)
+  }
 
   const setValue = (profile, name, total, withdrawal, service, reserved, balance) =>{
     setProfile(profile)
@@ -45,7 +61,10 @@ export const AuthProvider = ({children}) => {
     <AuthContext.Provider value={{
         profile, name, total, withdrawal, service, reserved, balance, setValue, open, onClick,
         kuppi, tutor, onClickKuppi, 
-        module, onClickModule
+        module, onClickModule,
+        universityTableSelect, onClickUniversityTableSelect,
+        degreeProgramTableSelect, onClickdegreeProgramTableSelect,
+        subjectTableSelect, onClickSubjectTableSelect
     }}>
         {children}
     </AuthContext.Provider>

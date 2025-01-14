@@ -8,6 +8,7 @@ import { PiHandWithdrawFill } from "react-icons/pi";
 import { LuMessageSquareMore } from "react-icons/lu";
 import { MdOutlineReport } from "react-icons/md";
 import { MdOutlineSettings } from "react-icons/md";
+import { FaUniversity } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 
 const SideBar = () => {
@@ -15,6 +16,7 @@ const SideBar = () => {
     const [dashboard, setDashboard] = useState(false);
     const [student, setStudent] = useState(true);
     const [tutor, setTutor] = useState(true);
+    const [university, setUniversity] = useState(true);
     const [kuppi, setKuppi] = useState(true);
     const [withdrawal, setWithdrawal] = useState(true);
     const [message, setMessage] = useState(true);
@@ -30,6 +32,7 @@ const SideBar = () => {
                     setDashboard(false)
                     setStudent(true)
                     setTutor(true)
+                    setUniversity(true)
                     setKuppi(true)
                     setWithdrawal(true)
                     setMessage(true)
@@ -49,6 +52,7 @@ const SideBar = () => {
                     setDashboard(true)
                     setStudent(false)
                     setTutor(true)
+                    setUniversity(true)
                     setKuppi(true)
                     setWithdrawal(true)
                     setMessage(true)
@@ -68,6 +72,7 @@ const SideBar = () => {
                     setDashboard(true)
                     setStudent(true)
                     setTutor(false)
+                    setUniversity(true)
                     setKuppi(true)
                     setWithdrawal(true)
                     setMessage(true)
@@ -87,6 +92,27 @@ const SideBar = () => {
                     setDashboard(true)
                     setStudent(true)
                     setTutor(true)
+                    setUniversity(false)
+                    setKuppi(true)
+                    setWithdrawal(true)
+                    setMessage(true)
+                    setReport(true)
+                    setSettings(true)
+                    navigate('/university')
+                }}
+                className={`w-full h-auto flex flex-row justify-center py-3 items-center font-medium cursor-pointer rounded-lg ${!university ? 'text-blue-600 bg-blue-200':'text-gray-500 bg-white'}`}
+            >
+                <div className='w-[150px] flex felx-row justify-start items-center gap-2'>
+                    <FaUniversity   className='text-[14pt]'/>
+                    <span className="text-center text-[12pt]">University</span>
+                </div>
+            </div>
+            <div
+                onClick={() => {
+                    setDashboard(true)
+                    setStudent(true)
+                    setTutor(true)
+                    setUniversity(true)
                     setKuppi(false)
                     setWithdrawal(true)
                     setMessage(true)
@@ -106,6 +132,7 @@ const SideBar = () => {
                     setDashboard(true)
                     setStudent(true)
                     setTutor(true)
+                    setUniversity(true)
                     setKuppi(true)
                     setWithdrawal(false)
                     setMessage(true)
@@ -125,6 +152,7 @@ const SideBar = () => {
                     setDashboard(true)
                     setStudent(true)
                     setTutor(true)
+                    setUniversity(true)
                     setKuppi(true)
                     setWithdrawal(true)
                     setMessage(false)
@@ -144,6 +172,7 @@ const SideBar = () => {
                     setDashboard(true)
                     setStudent(true)
                     setTutor(true)
+                    setUniversity(true)
                     setKuppi(true)
                     setWithdrawal(true)
                     setMessage(true)
@@ -163,6 +192,7 @@ const SideBar = () => {
                     setDashboard(true)
                     setStudent(true)
                     setTutor(true)
+                    setUniversity(true)
                     setKuppi(true)
                     setWithdrawal(true)
                     setMessage(true)

@@ -16,6 +16,7 @@ import TutorDetails from './pages/TutorDetails';
 import TutorPurchase from './pages/TutorPurchase';
 import KuppiModules from './pages/KuppiModules';
 import KuppiModuleDetail from './pages/KuppiModuleDetail';
+import University from './pages/University';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
             <Route path='/tutor' element={<Tutor />} />
             <Route path='/tutor-details' element={<TutorDetails />} />
             <Route path='/tutor-purchases' element={<TutorPurchase />} />
+            <Route path='/university' element={<University/>} />
             <Route path='/kuppi-upload' element={<KuppiUpload />} />
             <Route path='/kuppi-modules' element={<KuppiModules />} />
             <Route path='/kuppi-module-details' element={<KuppiModuleDetail />} />
